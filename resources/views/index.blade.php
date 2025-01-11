@@ -58,7 +58,7 @@
 
     <!-- Services -->
 
-    <section class="container">
+    {{-- <section class="container">
         <div class="text">
             <h2>Explore Our Interactive Exhibits!</h2>
         </div>
@@ -92,7 +92,7 @@
                 <h4>Geologi Indonesia</h4>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <!-- Packages -->
 
