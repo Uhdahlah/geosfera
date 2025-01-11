@@ -34,7 +34,10 @@
 
         <div class="content" id="home">
             <nav style="display: flex; align-items: center;">
+                <img src="assets/files/gema.png" class="logo" alt="Logo" title="FirstFlight Travels" style="width: 75px; height: auto;">
                 <img src="assets/files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels" style="width: 75px; height: auto;">
+
+
                 <span style="margin-left: 5px; font-size: 24px; font-weight: bold;">Geosfera</span>
                 <ul class="navbar" style="margin-left: auto;">
                     <li>
@@ -48,12 +51,30 @@
             </nav>
         </div>
 
-            <div class="title">
-                <h1>Geosfera</h1>
-                <p>Menggali Informasi, Memahami Geosfera <br> Mari Jelajahi Bumi dan Ungkap Keajaiban Dunia</p>
-
-            </div>
+        <div class="title">
+            <h1>Geosfera</h1>
+            <p>Menggali Informasi, Memahami Geosfera <br> Mari Jelajahi Bumi dan Ungkap Keajaiban Dunia</p>
         </div>
+
+        <style>
+            .title {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: white;
+                z-index: 1;
+            }
+            .title h1 {
+                font-size: 48px;
+                margin: 0;
+            }
+            .title p {
+                font-size: 24px;
+                margin: 10px 0 0;
+            }
+        </style>
     </div>
 
     <!-- Services -->
