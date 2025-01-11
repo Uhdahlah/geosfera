@@ -19,40 +19,54 @@
 
 <body class="aboutbody">
     <nav>
-        <img src="assets/files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels">
-
+        <img src="assets/files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels" style="width: 75px; height: auto;">
         <ul class="navbar">
             <li>
-                <a href="index.html">Home</a>
-                <a href="index.html#package">Packages</a>
-                <a href="index.html#locations">Locations</a>
-                <a href="/about">About Us</a>
-                <a href="/contact">Contact Us</a>
+                <a href="http://127.0.0.1:8000/">Home</a>
+                <a href="http://127.0.0.1:8000/chat-room">Chat Room</a>
+                <a href="#locations">FAQ</a>
+                <a href="http://127.0.0.1:8000/about">About Us</a>
+                <a href="http://127.0.0.1:8000/contact">Contact Us</a>
             </li>
         </ul>
+        </form>
     </nav>
+
 
     <section class="about">
         <div class="main">
             <div class="abt-text">
                 <h1>About <span>Us</span></h1>
-                <img src="assets/files/me.jpg" alt="Admin">
+                <img src="assets/files/bersama.jpg" alt="Admin">
                 <hr>
-                <p>Adventour is a travel website project developed by Amit using HTML, CSS and JavaScript.<br>
-                    Our team is composed of skilled professionals who are experts in their respective fields. We
-                    continuously
-                    strive for excellence and innovation, constantly seeking ways to improve and exceed customer
-                    expectations. <br>
-                    We believe in building long-lasting relationships with our customers, partners, and stakeholders. By
-                    prioritizing transparency, integrity, and open communication, we foster trust and mutual respect in
-                    all our interactions.
-                    <br>
-                    Thank you for taking the time to learn more about us. We appreciate your interest and look forward
-                    to the opportunity to serve you. If you have any questions or would like to know more, please don't
-                    hesitate to contact us.
+                <p>"Geosfera" berasal dari kata "geo," yang berarti bumi, dan "sfera," yang berarti lapisan atau bola. Website Geosfera dirancang sebagai platform interaktif baru bagi pengunjung Museum Geologi.
+                    Melalui website ini, pengunjung dapat berinteraksi secara langsung melalui fitur seperti public chat room dan community post.
+                    Selain itu, website ini juga menyediakan informasi lengkap mengenai ruangan-ruangan yang tersedia di Museum Geologi beserta koleksi-koleksi yang dipamerkan, sehingga pengalaman kunjungan menjadi lebih informatif dan menarik."
                 </p>
-                <a href="https://www.linkedin.com/in/amit-kumar-singh-475b36212/" class="connectbtn"
-                    target="_blank">Connect with me!</a>
+                {{-- <a href="https://www.linkedin.com/in/amit-kumar-singh-475b36212/" class="connectbtn"
+                    target="_blank">OUR TEAM !</a> --}}
+                    {{-- <div style="display: flex; justify-content: center; align-items: flex-start; gap: 10px;">
+                        <div style="text-align: center;">
+                            <img src="assets/files/anifa.jpg" alt="Admin" style="height: 150px; width: auto;">
+                            <p style="margin: 5px 0 0 0;">Yoga Prasetya</p>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <img src="assets/files/anifa.jpg" alt="Admin" style="height: 150px; width: auto;">
+                            <p style="margin: 5px 0 0 0;">Anifa Aulia</p>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <img src="assets/files/anifa.jpg" alt="Admin" style="height: 150px; width: auto;">
+                            <p style="margin: 5px 0 0 0;">Aldi Raffa</p>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <img src="assets/files/anifa.jpg" alt="Admin" style="height: 150px; width: auto;">
+                            <p style="margin: 5px 0 0 0;">Abdul Azis</p>
+                        </div>
+                    </div> --}}
+
 
                 <div class="connect-section">
 
@@ -105,7 +119,7 @@
         </div>
 
         <div class="end">
-            <p>Copyright © 2025 Adventour All Rights Reserved.<br>Website developed by: Geosfera's Team</p>
+            <p>Copyright © 2025 Geosfera.<br>Website developed by: Geosfera's Team</p>
         </div>
     </section>
 

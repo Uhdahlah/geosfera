@@ -170,8 +170,10 @@ nav ul li a {
   border: 1px solid #d3d3d3;
   border-radius: 5px;
   padding: 10px;
-  transition: all 0.7s ease 0s; 
+  transition: all 0.7s ease 0s;
   cursor: pointer;
+  margin-right: 120px;
+
 }
 
 .container-image img {
@@ -179,6 +181,7 @@ nav ul li a {
   width: 50px;
   padding: 10px;
   margin-bottom: 15px;
+  margin-right: 120px;
 }
 
 .container-box h4 {
@@ -542,9 +545,9 @@ color: black;
 
 .about img {
   position: static;
-  border-radius: 55%;
+  border-radius: 1%;
   height: auto;
-  width: 200px;
+  width: 82%;
 }
 
 .abt-text {

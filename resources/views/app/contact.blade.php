@@ -19,18 +19,17 @@
 
 <body class="contactbody">
     <nav>
-        <img src="assets/files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels">
-
+        <img src="assets/files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels" style="width: 75px; height: auto;">
         <ul class="navbar">
             <li>
-                <a href="index.html">Home</a>
-                <a href="index.html#package">Packages</a>
-                <a href="index.html#locations">Locations</a>
-                <a href="info.html">About Us</a>
-                <a href="/contact">Contact Us</a>
+                <a href="http://127.0.0.1:8000/">Home</a>
+                <a href="http://127.0.0.1:8000/chat-room">Chat Room</a>
+                <a href="#locations">FAQ</a>
+                <a href="http://127.0.0.1:8000/about">About Us</a>
+                <a href="http://127.0.0.1:8000/contact">Contact Us</a>
             </li>
         </ul>
-
+        </form>
     </nav>
 
     <section class="contact">

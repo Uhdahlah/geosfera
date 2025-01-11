@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adventour</title>
+    <title>Geosfera</title>
     <link rel="icon" href="assets/files/logo.png">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reg.css">
@@ -27,68 +27,31 @@
     <!-- Background Video & Header -->
 
     <div class="banner">
-        <video src="assets/files/bgvid.mp4" type="video/mp4" autoplay muted loop></video>
+        <video src="assets/files/bgvid.mp4" type="video/mp4" autoplay muted loop style="filter: blur(5px);"></video>
 
         <!-- Header -->
 
 
         <div class="content" id="home">
-            <nav>
-                <img src="assets/files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels">
-                <ul class="navbar">
+            <nav style="display: flex; align-items: center;">
+                <img src="assets/files/logo.png" class="logo" alt="Logo" title="FirstFlight Travels" style="width: 75px; height: auto;">
+                <span style="margin-left: 5px; font-size: 24px; font-weight: bold;">Geosfera</span>
+                <ul class="navbar" style="margin-left: auto;">
                     <li>
-                        <a href="#home">Home</a>
-                        <a href="#package">Packages</a>
-                        <a href="#locations">Locations</a>
-                        <a href="/about">About Us</a>
-                        <a href="contact.html">Contact Us</a>
+                        <a href="http://127.0.0.1:8000/">Home</a>
+                        <a href="http://127.0.0.1:8000/chat-room">Chat Room</a>
+                        <a href="#locations">FAQ</a>
+                        <a href="http://127.0.0.1:8000/about">About Us</a>
+                        <a href="http://127.0.0.1:8000/contact">Contact Us</a>
                     </li>
                 </ul>
-                </form>
             </nav>
-
+        </div>
 
             <div class="title">
-                <h1>ADVENTOUR</h1>
-                <p>See the World for Less! Explore Amazing Destinations with Our Budget-Friendly Packages.  </p>
+                <h1>Geosfera</h1>
+                <p>Menggali Informasi, Memahami Geosfera <br> Mari Jelajahi Bumi dan Ungkap Keajaiban Dunia</p>
 
-                <div class="wrapper">
-                    <form action="#">
-                        <div class="h5 font-weight-bold text-center mb-3" >Search your Destination</div>
-                        <div class="destination">
-                            <label for="city" >Enter your destination</label>
-                          </div>
-
-                        <div class="form-group ">
-                            <input type="text" class="form-control" placeholder="Enter Your Name">
-                        </div>
-                        <div class="destination">
-                            <label for="city" >Enter your date</label>
-                        </div>
-                        <div class="form-group">
-                            <input autocomplete="off" type="date" class="form-control" placeholder="Select your date">
-                        </div>
-                        <div class="form-group">
-                            <div class="lable_total flex">
-                                  <label class="destination"  for="price">Max Price : <span id="result">2500</span>
-                                </label>
-                            </div>
-                            <input id="mySlider" type="range" min="0" max="10000" value="2500"  style="width: 215px;">
-                            <script>
-                                mySlider.oninput = showSliderValue;
-                                function showSliderValue() {
-                                    result.innerText = this.value;
-                                }
-                            </script>
-                        </div>
-                    </form>
-                </div>
-
-                <a href="booking.html" class="button">
-                    <span class="material-symbols-outlined">
-                        how_to_reg
-                    </span>
-                </a>
             </div>
         </div>
     </div>
@@ -97,40 +60,36 @@
 
     <section class="container">
         <div class="text">
-            <h2>We have the best services available for you!</h2>
+            <h2>Explore Our Interactive Exhibits!</h2>
         </div>
         <div class="rowitems">
 
             <div class="container-box">
                 <div class="container-image">
-                    <img src="assets/files/1a.jpg" alt="Flight Services">
+                    <img src="assets/files/geologi1.jpg" alt="Sejarah Kehidupan">
                 </div>
-                <h4>Flight Services</h4>
-                <p>Arrival and Departure</p>
+                <h4>Sejarah Kehidupan</h4>
             </div>
 
             <div class="container-box">
                 <div class="container-image">
-                    <img src="assets/files/2a.jpg" alt="Food Services">
+                    <img src="assets/files/geologi2.jpg" alt="Manfaat dan Bencana Geologi">
                 </div>
-                <h4>Food Services</h4>
-                <p>Catering</p>
+                <h4>Manfaat dan Bencana Geologi</h4>
             </div>
 
             <div class="container-box">
                 <div class="container-image">
-                    <img src="assets/files/3a.jpg" alt="Travel Services">
+                    <img src="assets/files/geologi3.jpg" alt="Sumber Daya Geologi">
                 </div>
-                <h4>Travel Services</h4>
-                <p>Pick-up/drop</p>
+                <h4>Sumber Daya Geologi</h4>
             </div>
 
             <div class="container-box">
                 <div class="container-image">
-                    <img src="assets/files/4a.jpg" alt="Hotel Services">
+                    <img src="assets/files/geologi4.jpg" alt="Geologi Indonesia">
                 </div>
-                <h4>Hotel Services</h4>
-                <p>Check-in/out</p>
+                <h4>Geologi Indonesia</h4>
             </div>
         </div>
     </section>
@@ -139,10 +98,10 @@
 
     <section class="package" id="package">
         <div class="package-title">
-            <h2>Packages</h2>
+            <h2>Koleksi</h2>
         </div>
 
-        <div class="package-content">
+        {{-- <div class="package-content">
             <div class="text-block">
                 <h3>Best Selling Destinations</h3>
             </div>
@@ -227,19 +186,10 @@
                 </div>
             </a>
 
-        </div>
+        </div> --}}
     </section>
 
-    <section>
-        <br><br>
-        <div class="pack4-content">
-            <div style="text-align:center">
-                <button type="button" class="btn btn-primary"><a href="booking.html"><JavaBlink>Book Now</JavaBlink></a></button>
-            </div>
-        </div><br><br>
-    </section>
-
-    <section class="package2" id="package">
+    {{-- <section class="package2" id="package">
         <div class="pack5-content">
 
             <div class="text-block">
@@ -276,7 +226,7 @@
                 </div>
             </div>
         </div>
-    </section><br><br>
+    </section><br><br> --}}
 
     <section class="package2" id="package">
 
@@ -289,37 +239,37 @@
             <a href="assets/package.html#6000">
                 <div class="box">
                     <div class="image">
-                        <img src="assets/files/pac2.1.jpg" alt="">
-                        <h3> Thailand </h3>
+                        <img src="assets/files/koleksi1.jpg" alt="">
+                        <h3>Batu Geologi</h3>
                     </div>
                 </div>
             </a>
 
             <div class="box">
                 <div class="image">
-                    <img src="assets/files/pack2.2.jpg" alt="">
-                    <h3>Goa</h3>
+                    <img src="assets/files/koleksi2.jpg" alt="">
+                    <h3>Gajah </h3>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="assets/files/pac2.3.jpg" alt="">
-                    <h3>Karala</h3>
+                    <img src="assets/files/koleksi3.jpg" alt="">
+                    <h3>Batu Sejarah Kehidupan</h3>
                 </div>
             </div>
 
             <div class="box">
                 <div class="image">
-                    <img src="assets/files/pac2.4.webp" alt="">
-                    <h3>Bali</h3>
+                    <img src="assets/files/koleksi4.jpg" alt="">
+                    <h3>Alur Sumber Daya Alam</h3>
                 </div>
             </div>
 
             <a href="package.html#6000">
                 <div class="box">
                     <div class="image">
-                        <img src="assets/files/pac2.5.jpg" alt="">
+                        <img src="assets/files/koleksi5.jpg" alt="">
                         <h3>Kashmir</h3>
                     </div>
                 </div>
@@ -337,73 +287,63 @@
 
     <section class="locations" id="locations">
         <div class="package-title">
-            <h2>Locations</h2>
+            <h2>Ruang Pameran</h2>
         </div>
 
         <div class="location-content">
             <a href="locations.html">
                 <div class="col-content">
-                    <img src="assets/files/l1.jpg" alt="">
-                    <h5>India</h5>
-                    <p>Kashmir</p>
+                    <img src="assets/files/geologi1.jpg" alt="">
+                    <h5>Sejarah Kehidupan</h5>
                 </div>
             </a>
 
             <a href="locations.html#istanbul">
                 <div class="col-content">
-                    <img src="assets/files/l2.jpg" alt="">
-                    <h5>Turkey</h5>
-                    <p>Istanbul</p>
+                    <img src="assets/files/geologi2.jpg" alt="">
+                    <h5>Kebencanaan Geologi</h5>
                 </div>
             </a>
 
             <a href="locations.html#paris">
                 <div class="col-content">
-                    <img src="assets/files/l3.jpg" alt="">
-                    <h5>France</h5>
-                    <p>Paris</p>
+                    <img src="assets/files/geologi3.jpg" alt="">
+                    <h5>Sumber Daya Geologi</h5>
                 </div>
             </a>
 
             <a href="locations.html#bali">
                 <div class="col-content">
-                    <img src="assets/files/l4.jpg" alt="">
-                    <h5>Indonesia</h5>
-                    <p>Bali</p>
-                </div>
-            </a>
-
-            <a href="locations.html#dubai">
-                <div class="col-content">
-                    <img src="assets/files/l5.jpg" alt="">
-                    <h5>United Arab Emirates</h5>
-                    <p>Dubai</p>
-                </div>
-            </a>
-
-            <a href="locations.html#geneva">
-                <div class="col-content">
-                    <img src="assets/files/l6.jpg" alt="">
-                    <h5>Switzerland</h5>
-                    <p>Geneva</p>
-                </div>
-            </a>
-
-            <a href="locations.html#port-blair">
-                <div class="col-content">
-                    <img src="assets/files/l7.jpg" alt="">
-                    <h5>Andaman & Nicobar</h5>
-                    <p>Port Blair</p>
+                    <img src="assets/files/geologi4.jpg" alt="">
+                    <h5>Geologi Indonesia</h5>
                 </div>
             </a>
         </div>
     </section><br><hr>
 
+    <style>
+        .location-content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px; /* Adjust the gap as needed */
+        }
+        .col-content {
+            flex: 1 1 200px;
+            max-width: 200px;
+            text-align: center;
+        }
+        .col-content img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
     <!-- FAQ;s -->
 
     <section><br>
         <div class="destination-title">
-            <h2>Best Destinations to Visit in India</h2>
+            <h2>Informasi Ruang Pameran</h2>
         </div>
         <div class="container1">
             <style>
@@ -443,17 +383,16 @@
             </style>
 
             <div class="box">
-                <h1>Goa</h1>
-                <p>The unofficial party place of India, Goa is more than that. It has a great legacy, history and
-                    culture that are yet to be explored. But if beaches are what you are looking for, then the state
-                    has that too. And that's why, India tours to Goa are a great option to explore the place,
-                    according to your interests. Goa holiday packages are also popular because Goa is one of the top
-                    places in the world when it comes to nightlife. Find several exciting tour packages and other
-                    India holiday packages that let you try Goa's melange of watersports and other fun activities.
-                    <br>
-                    <br><b>Best time to visit :</b> November to February <br>
+                <h1>Sejarah Kehidupan</h1><br>
+                <p>Ruangan ini menyajikan gambaran perkembangan kehidupan di bumi sejak terbentuknya planet ini 4,6 miliar tahun yang lalu.
+                    Proses ini dimulai dengan pembentukan litosfer, atmosfer, dan hidrosfer sekitar 3,8 miliar tahun yang lalu, disusul oleh kemunculan kehidupan awal berupa mikroorganisme
+                    seperti ganggang dan bakteri sekitar 3,5 miliar tahun yang lalu, yang diwakili oleh fosil tertua, Stromatolit.
+                     Ruangan ini juga menampilkan perjalanan evolusi kehidupan dari masa ke masa, mulai dari makhluk hidup di air hingga migrasi ke daratan,
+                     dari organisme bersel tunggal hingga organisme bersel banyak, dari hewan invertebrata hingga vertebrata, dan dari tumbuhan paku hingga tumbuhan berbunga.
+                     Selain itu, pengunjung dapat mempelajari sejarah geologi Bandung, termasuk kisah terbentuknya Danau Bandung Purba, serta melihat berbagai replika fosil manusia purba yang dipamerkan.
+                    {{-- <br><b>Best time to visit :</b> November to February <br> --}}
 
-                    <br> <b>Best places to visit:</b>
+                    {{-- <br> <b>Best places to visit:</b>
                 <ul class="loc-detail">
                     <li>Calangute</li>
                     <li>Baga</li>
@@ -461,84 +400,55 @@
                     <li> Miramar</li>
                     <li> Palolem</li>
                     <li> Panjim</li>
-                </ul>
-
-                <br> You can also include the offbeat Patnem Beach in your holiday tour packages, since it was
-                listed amongst one of Asia's top 20 beaches.
-                </p>
+                </ul> --}}
             </div>
 
             <div class="box">
-                <h1>
-                    Kerala
-                </h1>
-                <p>God's own country, Kerala has been a popular tourist destination in India. You can explore it all
-                    with India tours to this marvellous destination. With suitable tour packages, you can discover
-                    scenic seaside destinations and hill stations in Kerala. <br>
-                    <br> <b>Best time to visit:</b> September to March <br>
+                <h1>Manfaat dan Bencana Geologi</h1><br>
+                <p>Ruang Pameran Manfaat dan Bencana Geologi memberikan informasi mendalam tentang pemanfaatan sumber daya geologi oleh manusia <br>
+                serta berbagai jenis bencana geologi. Pada sudut pameran pemanfaatan, disajikan perkembangan pengolahan sumber daya geologi dari masa ke masa. Sementara itu, sudut pameran bencana geologi menampilkan beragam jenis bencana, seperti gempa bumi dan tsunami, letusan gunung berapi, serta tanah longsor.                    {{-- <br><b>Best time to visit :</b> November to February <br> --}}
 
-                    <br> <b>Best places to visit:</b>
+                    {{-- <br> <b>Best places to visit:</b>
                 <ul class="loc-detail">
-                    <li>Sree Padmanabhaswamy Temple</li>
-                    <li> Francis CSI Church</li>
-                    <li> Paradesi Synagogue</li>
-                    <li> Eravikulam National Park
-                        Varkala Beach</li>
-                    <li>Athirappilly Waterfalls</li>
-                </ul>
-                <br>
-
-                <br>
-                If you are planning India holiday packages in the state, then you must not miss out on its
-                lip-smacking cuisine as well. Check your holiday tour packages and book accordingly.</p>
-
+                    <li>Calangute</li>
+                    <li>Baga</li>
+                    <li>Anjuna</li>
+                    <li> Miramar</li>
+                    <li> Palolem</li>
+                    <li> Panjim</li>
+                </ul> --}}
             </div>
 
             <div class="box">
-                <h1>Kashmir</h1>
-                <p>
-                    For decades, the Kashmir valley has attracted tourists from all over the world. If you can't
-                    plan a vacation on your own, you should check out India tours for Kashmir to help you with an
-                    unforgettable holiday. With the right all India tour packages, you can discover lush green
-                    valleys, snow-covered peaks and gorgeous wildlife. Your trip packages must include the Chenab,
-                    Sindh and Lidder valleys. Don't forget to buy a world-famous Kashmiri shawl and one-of-a-kind
-                    handicrafts for your loved ones. <br>
-                    <br> <b> Best Time to Visit:</b> March to August <br>
+                <h1>Ruangan Sumber Daya Geologi</h1><br>
+                <p>Menampilkan berbagai jenis potensi sumber daya geologi yang mencakup mineral, energi, dan tanah. Untuk sumber daya mineral, ruangan ini mengulas beragam mineral logam dan non-logam, termasuk batu mulia. Pada sumber daya energi, informasi yang disajikan mencakup energi konvensional seperti minyak bumi dan panas bumi. Selain itu, ruangan ini juga menyoroti pentingnya sumber daya air, terutama air tanah, sebagai elemen vital bagi kelangsungan hidup manusia.
 
-                    <br> Best Places to Visit: <br>
+                    {{-- <br> <b>Best places to visit:</b>
                 <ul class="loc-detail">
-                    <li>Gulmarg</li>
-                    <li> Srinagar</li>
-                    <li> Dal Lake</li>
-                    <li> Sonamarg</li>
-                    <li> Indira Gandhi Tulip Garden</li>
-                </ul>
-                <br>
-                <br> These places should be included in the best tour packages for Kashmir. Find travel packages to
-                suit all needs and you can also find exquisite honeymoon packages, since Kashmir is an ethereal
-                destination for a picture-perfect Indian honeymoon.</p>
+                    <li>Calangute</li>
+                    <li>Baga</li>
+                    <li>Anjuna</li>
+                    <li> Miramar</li>
+                    <li> Palolem</li>
+                    <li> Panjim</li>
+                </ul> --}}
             </div>
 
             <div class="box">
-                <h1>Sikkim</h1>
-                <p>If you are looking for an Indian destination that is fit for a world tour package, then look no
-                    further than Sikkim. You can plan amazing India tours to this mountain marvel, which is home to
-                    the country's highest peak, Kanchenjunga. It is certainly a great destination for quality
-                    international tour packages. Check out Sikkim tour packages for a trip to this charming Indian
-                    state. <br>
-                    <br> <b>Best Time to Visit:</b> March to May <br>
-
-                    <br> Best Places to Visit:
+                <h1>Geologi Indonesia</h1><br>
+                <p>Ruangan ini memberikan informasi tentang proses terbentuknya bumi dalam tata surya yang termasuk dalam sistem keluarga matahari. Di ruangan ini, pengunjung dapat melihat koleksi meteorit dan tektit. Selain itu, dijelaskan pula perkembangan kepulauan Indonesia selama 50 juta tahun terakhir hingga kondisinya saat ini, berdasarkan teori tektonik lempeng. Posisi kepulauan Indonesia yang terletak di antara tiga lempeng tektonik utama—Eurasia, Pasifik, dan Indo-Australia—mengakibatkan terjadinya berbagai fenomena geologi, seperti gempa bumi, tsunami, dan aktivitas gunung berapi. Fenomena dan ciri-ciri geologi utama dari masing-masing pulau besar di Indonesia juga dipaparkan. Ruangan ini turut menampilkan berbagai jenis mineral dan batuan beserta klasifikasinya, serta cara mengenali masing-masingnya.
+                    {{-- <br> <b>Best places to visit:</b>
                 <ul class="loc-detail">
-                    <li> Gangtok</li>
-                    <li> Nathu La Pass</li>
-                    <li> Tsomgo Lake</li>
-                    <li> Rumtek Monastery</li>
-                </ul>
-                </p>
+                    <li>Calangute</li>
+                    <li>Baga</li>
+                    <li>Anjuna</li>
+                    <li> Miramar</li>
+                    <li> Palolem</li>
+                    <li> Panjim</li>
+                </ul> --}}
             </div>
 
-            <div class="box">
+            {{-- <div class="box">
                 <h1>Shimla</h1>
                 <p> Shimla, the Queen of the Hills, is the stuff that dreamy India tours are made of! Shimla is a
                     great
@@ -557,9 +467,9 @@
                     <li> Jakhoo Hill</li>
                 </ul>
                 </p>
-            </div>
+            </div> --}}
 
-            <div class="box">
+            {{-- <div class="box">
                 <h1> Uttarakhand</h1>
                 <p> There are many India tours which keep Uttarakhand at the forefront and why not? The state is
                     blessed with unmatched natural beauty. Find Uttarakhand tour packages covering several popular
@@ -578,12 +488,11 @@
                 </ul>
                 </p>
 
-            </div>
+            </div> --}}
         </div>
     </section>
 
     <section class="faq">
-
         <div class="container2">
             <style>
                 .container2 {
@@ -601,46 +510,42 @@
                     box-shadow: 5px 5px 10px #3b3737;
                 }
             </style>
-
             <div> <br>
                 <h1 class="faqh1">FAQs - Frequently Asked Questions</h1>
             </div>
-
             <p><br>
-            <h3> What kind of destinations can I choose for travelling?</h3> <br>
-            <p> You can choose any destination for travel as per your mood. For an action-packed holiday, you can choose
-                wildlife, trekking and other adventurous destinations. For a romantic holiday with your special someone,
-                you can choose from a range of couple-friendly destinations. You can also choose the kind of holiday you
-                want based on the destination you like—whether hills, mountains, beaches, heritage or pilgrimage sites.
-            </p><br>
-            <hr>
+                <h3> Apa waktu operasional Museum Geologi?</h3> <br>
+                <p>
+                    Museum Geologi buka dari Senin hingga Kamis pada pukul 09.00 - 15.00 WIB, dan pada Sabtu serta Minggu pukul 09.00 - 14.00 WIB. Museum tutup pada hari Jumat dan libur nasional.
+                </p><br>
+                <hr>
 
-            <br>
-            <h3> Can I opt for a budget-friendly holiday?</h3><br>
-            <p>
-                Yes, you can. All you have to do is set an approximate expenditure amount in your mind before starting
-                exploring the ideas here. You can search for a suitable destination for your travel in any range from
-                Rs. 10,000 to Rs. 50,000. It is advisable to make all the bookings in advance in order to avoid change
-                in prices.</p><br>
-            <hr>
+                <br>
+                <h3> Berapa harga tiket masuk Museum Geologi?</h3><br>
+                <p>
+                    Harga tiket masuk Museum Geologi adalah sebagai berikut:
+                    <ul>
+                        <li>Pelajar: Rp 2.000,-</li>
+                        <li>Umum: Rp 3.000,-</li>
+                        <li>Asing: Rp 10.000,-</li>
+                    </ul>
+                    Pembayaran tiket dilakukan pada saat kedatangan.
+                </p><br>
+                <hr>
 
-            <br>
-            <h3> Which time of the year is best suited for booking a holiday?</h3><br>
-            <p>x
-                Holidays can be booked throughout the year. You only need to select the month in which you are planning
-                to travel. Our curated list of ideas is designed in such a way that you will be able to see only those
-                destinations which are most suitable for that particular month of the year. If you select a combination
-                of filters defining your month, budget and purpose of travel, you will get the appropriate destination
-                name and other details.</p><br>
-            <hr>
+                <br>
+                <h3> Bagaimana cara reservasi kunjungan ke Museum Geologi?</h3><br>
+                <p>
+                    Untuk reservasi kunjungan konvensional, Anda dapat menghubungi WhatsApp di nomor 0811 8880 1928. Untuk tur virtual, Anda dapat menghubungi WhatsApp di nomor 0811 8880 1929. Reservasi dilakukan sesuai waktu operasional museum.
+                </p><br>
+                <hr>
 
-            <br>
-            <h3>What all will I get in a holiday idea?</h3>
-            <p>Once you choose a destination, it will give you complete details of all the unique things about that
-                place that must not be missed, including most visited local sites, best places to stay and all the
-                memorable experiences that you can indulge in. You will be given multiple options of hotels, resorts and
-                guest houses to choose from depending on your budget. </p> <br>
-            <hr>
+                <br>
+                <h3> Apa saja fasilitas yang tersedia di Museum Geologi?</h3>
+                <p>
+                    Museum Geologi menyediakan berbagai fasilitas, seperti ruang pameran, auditorium, perpustakaan, area parkir, toilet, dan toko suvenir. Fasilitas ini ditujukan untuk kenyamanan pengunjung selama berkunjung.
+                </p> <br>
+                <hr>
             </p>
         </div>
     </section>
