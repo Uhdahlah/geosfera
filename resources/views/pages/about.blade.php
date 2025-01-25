@@ -54,6 +54,7 @@
           <li><a href="/gallery"><span>Gallery</span></i></a>
           </li>
           <li><a href="/museum">Museum</a></li>
+          <li><a href="/posts">Post</a></li>
           <li><a href="/contact">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
